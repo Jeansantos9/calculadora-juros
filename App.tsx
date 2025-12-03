@@ -2,7 +2,6 @@ import React, { useState, useEffect, useMemo } from 'react';
 import InputCard from './components/InputCard';
 import Metrics from './components/Metrics';
 import GrowthChart from './components/GrowthChart';
-import GeminiAdvisor from './components/GeminiAdvisor';
 import { InputParams, CalculationResult } from './types';
 import { calculateCompoundInterest } from './services/calculatorService';
 import { TrendingUp } from 'lucide-react';
@@ -63,7 +62,6 @@ const App: React.FC = () => {
             
             <GrowthChart data={results.breakdown} />
 
-            <GeminiAdvisor inputs={inputs} result={results} />
 
           </div>
         </div>
